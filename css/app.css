@@ -1,0 +1,53 @@
+body {
+  background-color: var(--bs-gray-900);
+  height: 100vh;
+}
+
+.join-card {
+  min-height: 30vh;
+  min-width: 70%;
+}
+
+.chat-card {
+  min-height: 80vh;
+  min-width: 85%;
+}
+
+.messages-box {
+  height: 60vh;
+  background-color: var(--bs-gray-500);
+  overflow-y: scroll;
+  box-shadow: 2px 2px 2px 0.1px grey inset;
+}
+
+.messages-box::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.messages-box::-webkit-scrollbar-track {
+  /* background: var(--bs-gray-900); */
+  width: 2px;
+}
+
+.messages-box::-webkit-scrollbar-thumb {
+  background-color: #bb2d3b;
+  border-radius: 5px;
+}
+
+.message {
+  background-color: var(--bs-gray-200);
+  width: 45%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.message-left {
+  border-radius: 5px 5px 5px 0;
+}
+
+.message-right {
+  align-self: flex-end;
+  border-radius: 5px 5px 0 5px;
+  background-color: var(--bs-gray-800);
+  color: var(--bs-gray-200);
+}

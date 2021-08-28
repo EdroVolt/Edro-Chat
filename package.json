@@ -1,0 +1,25 @@
+{
+  "name": "edro-chat",
+  "version": "1.0.0",
+  "description": "realtime chat app",
+  "main": "index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdroVolt/Edro-Chat.git"
+  },
+  "author": "Edro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdroVolt/Edro-Chat/issues"
+  },
+  "homepage": "https://github.com/EdroVolt/Edro-Chat#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.5.0"
+  }
+}

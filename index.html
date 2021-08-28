@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edro Chat</title>
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+  <div class="container h-100 d-flex justify-content-center align-items-center">
+    <section class="join-card bg-light d-none rounded-3 border border-3">
+      <h1 class="text-center p-4 bg-dark text-light">😎 Edro Chat! </h1>
+      <div class="content d-flex flex-column justify-content-between h-100 p-4 mt-3">
+        <div class="input-group mb-4">
+          <div class="input-group-text">
+            <i class="bi bi-people"></i>
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Type group name">
+        </div>
+        <div class="input-group mb-4">
+          <div class="input-group-text">
+            <i class="bi bi-person-badge"></i>
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Type your name">
+        </div>
+        <button type="button" class="btn btn-success">Join group</button>
+      </div>
+    </section>
+
+    <section class="chat-card bg-light rounded-3 border border-3">
+      <div class="header bg-dark p-2 d-flex rounded-3 justify-content-between">
+        <h2 class="d-inline fs-3 text-light"> <span class="group-name">Group name:</span> online users (<span
+            class="online-users">5</span>)</h2>
+        <button type="button" class="btn btn-danger">Logout</button>
+      </div>
+      <div class="content p-1">
+        <div class="messages-box d-flex flex-column p-2 rounded-3 mt-2">
+          <p class="message message-left p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam nisi quia voluptatibus non, neque esse
+            quod vel expedita, rem minima eum dicta corrupti, nihil veniam! Repellat earum neque tempore.
+          </p>
+          <p class="message message-right p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam nisi quia voluptatibus non, neque esse
+            quod vel expedita, rem minima eum dicta corrupti, nihil veniam! Repellat earum neque tempore.
+          </p>
+          <p class="message message-left p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam nisi quia voluptatibus non, neque esse
+            quod vel expedita, rem minima eum dicta corrupti, nihil veniam! Repellat earum neque tempore.
+          </p>
+
+
+        </div>
+
+        <div class="messages-tool">
+
+        </div>
+
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
