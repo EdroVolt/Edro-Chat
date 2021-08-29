@@ -41,6 +41,12 @@ const sendMessage = () => {
 
   messagesBox.scrollTo(0, messagesBox.scrollHeight);
 
+  const sound = new Howl({
+    src: ["../tick.mp3"],
+  });
+
+  sound.play();
+
   console.log("sent!");
 };
 

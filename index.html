@@ -8,13 +8,14 @@
   <title>Edro Chat</title>
   <link rel="stylesheet" href="./lib/bootstrap.min.css">
   <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
   <link rel="stylesheet" href="./css/app.css">
 </head>
 
 <body>
   <div class="container h-100 d-flex justify-content-center align-items-center">
     <!-- start join-card section -->
-    <section class="join-card bg-light  rounded-3 border border-3">
+    <section class="join-card bg-light rounded-3 border border-3 animate__animated">
       <h1 class="text-center p-4 bg-dark text-light">😎 Edro Chat! </h1>
 
       <!-- start join-card-content -->
@@ -48,7 +49,7 @@
     <!-- end join-card section -->
 
     <!-- start chat-card section -->
-    <section class="chat-card bg-light d-none rounded-3 border border-3">
+    <section class="chat-card bg-light d-none rounded-3 border border-3 animate__animated">
       <!-- start chat-card-header section -->
       <div class="header bg-dark p-2 d-flex rounded-3 justify-content-between">
         <h2 class="d-inline fs-3 text-light w-100"> <span class="group-name">Group name</span>: online users <span
@@ -96,6 +97,7 @@
     <!-- end chat-card section -->
   </div>
 
+  <script src="./node_modules/howler/dist/howler.min.js"></script>
   <script src="./js/index.js"></script>
 </body>
 

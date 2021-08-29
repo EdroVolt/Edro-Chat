@@ -1,1 +1,3 @@
-"# Edro-Chat" 
+# 😎 Edro-Chat
+
+simple chat-App
