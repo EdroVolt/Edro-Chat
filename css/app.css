@@ -39,7 +39,8 @@ body {
 
 .messages-box::-webkit-scrollbar-thumb,
 .message-input::-webkit-scrollbar-thumb {
-  background-color: #bb2d3b;
+  background-color: #d1d8dd;
+  box-shadow: 0 0 2px 0 gray;
   border-radius: 5px;
 }
 
