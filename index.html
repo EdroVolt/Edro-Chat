@@ -13,56 +13,90 @@
 
 <body>
   <div class="container h-100 d-flex justify-content-center align-items-center">
-    <section class="join-card bg-light d-none rounded-3 border border-3">
+    <!-- start join-card section -->
+    <section class="join-card bg-light  rounded-3 border border-3">
       <h1 class="text-center p-4 bg-dark text-light">😎 Edro Chat! </h1>
+
+      <!-- start join-card-content -->
       <div class="content d-flex flex-column justify-content-between h-100 p-4 mt-3">
+
+        <!-- start group-name input -->
         <div class="input-group mb-4">
           <div class="input-group-text">
             <i class="bi bi-people"></i>
           </div>
-          <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Type group name">
+          <input type="text" class="group-name form-control" aria-label="Text input with checkbox"
+            placeholder="Type group name">
         </div>
+        <!-- end group-name input -->
+
+        <!-- start user-name input -->
         <div class="input-group mb-4">
           <div class="input-group-text">
             <i class="bi bi-person-badge"></i>
           </div>
-          <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Type your name">
+          <input type="text" class="name form-control" aria-label="Text input with checkbox"
+            placeholder="Type your name">
         </div>
-        <button type="button" class="btn btn-success">Join group</button>
-      </div>
-    </section>
+        <!-- end user-name input -->
 
-    <section class="chat-card bg-light rounded-3 border border-3">
-      <div class="header bg-dark p-2 d-flex rounded-3 justify-content-between">
-        <h2 class="d-inline fs-3 text-light"> <span class="group-name">Group name:</span> online users (<span
-            class="online-users">5</span>)</h2>
-        <button type="button" class="btn btn-danger">Logout</button>
+        <button type="button" class="btn btn-success" onclick="joinGroup()">Join group</button>
       </div>
+      <!-- end join-card-content -->
+
+    </section>
+    <!-- end join-card section -->
+
+    <!-- start chat-card section -->
+    <section class="chat-card bg-light d-none rounded-3 border border-3">
+      <!-- start chat-card-header section -->
+      <div class="header bg-dark p-2 d-flex rounded-3 justify-content-between">
+        <h2 class="d-inline fs-3 text-light w-100"> <span class="group-name">Group name</span>: online users <span
+            class="online-users ml-3">5</span></h2>
+        <button type="button" class="btn btn-danger" onclick="logOut()">Logout</button>
+      </div>
+      <!-- end chat-card-header section -->
+
+      <!-- start chat-card-content section -->
       <div class="content p-1">
+        <!-- start message-box section -->
         <div class="messages-box d-flex flex-column p-2 rounded-3 mt-2">
           <p class="message message-left p-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam nisi quia voluptatibus non, neque esse
             quod vel expedita, rem minima eum dicta corrupti, nihil veniam! Repellat earum neque tempore.
           </p>
+
           <p class="message message-right p-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam nisi quia voluptatibus non, neque esse
             quod vel expedita, rem minima eum dicta corrupti, nihil veniam! Repellat earum neque tempore.
           </p>
+
           <p class="message message-left p-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam nisi quia voluptatibus non, neque esse
             quod vel expedita, rem minima eum dicta corrupti, nihil veniam! Repellat earum neque tempore.
           </p>
 
-
         </div>
+        <!-- start message-box section -->
 
-        <div class="messages-tool">
+        <!-- start message-tool section -->
+        <div class="messages-tool d-flex justify-content-between align-items-center mt-3">
+          <div class="input-group">
+            <textarea class="message-input form-control" placeholder="Enter your message" aria-label="With textarea"
+              onkeydown="handleTextAreaKeypress(event)"></textarea>
+          </div>
 
+          <i class="btn bi bi-caret-right-fill text-success px-2 fs-1" onclick="sendMessage()"></i>
         </div>
+        <!-- end message-box section -->
 
       </div>
+      <!-- end chat-card-content section -->
     </section>
+    <!-- end chat-card section -->
   </div>
+
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

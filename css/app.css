@@ -3,14 +3,20 @@ body {
   height: 100vh;
 }
 
+/* join-card */
 .join-card {
   min-height: 30vh;
   min-width: 70%;
 }
 
+/* chat-card */
 .chat-card {
-  min-height: 80vh;
+  max-height: 80vh;
   min-width: 85%;
+}
+
+.online-users {
+  color: rgb(108, 233, 5);
 }
 
 .messages-box {
@@ -20,16 +26,19 @@ body {
   box-shadow: 2px 2px 2px 0.1px grey inset;
 }
 
-.messages-box::-webkit-scrollbar {
+.messages-box::-webkit-scrollbar,
+.message-input::-webkit-scrollbar {
   width: 0.5em;
 }
 
-.messages-box::-webkit-scrollbar-track {
+.messages-box::-webkit-scrollbar-track,
+.message-input::-webkit-scrollbar-track {
   /* background: var(--bs-gray-900); */
   width: 2px;
 }
 
-.messages-box::-webkit-scrollbar-thumb {
+.messages-box::-webkit-scrollbar-thumb,
+.message-input::-webkit-scrollbar-thumb {
   background-color: #bb2d3b;
   border-radius: 5px;
 }
@@ -50,4 +59,8 @@ body {
   border-radius: 5px 5px 0 5px;
   background-color: var(--bs-gray-800);
   color: var(--bs-gray-200);
+}
+
+.message-input {
+  resize: none;
 }
