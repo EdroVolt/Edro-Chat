@@ -1,6 +1,6 @@
 body {
   background-color: var(--bs-gray-900);
-  height: 100vh;
+  height: 96vh;
   user-select: none;
 }
 
@@ -34,7 +34,6 @@ body {
 
 .messages-box::-webkit-scrollbar-track,
 .message-input::-webkit-scrollbar-track {
-  /* background: var(--bs-gray-900); */
   width: 2px;
 }
 
@@ -73,6 +72,7 @@ body {
     display: block;
   }
   .chat-card {
-    max-height: 89vh;
+    max-height: 98vh;
+    min-width: 98%;
   }
 }
