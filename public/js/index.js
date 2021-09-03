@@ -21,7 +21,7 @@ const updateOnlineUsers = () => {
   online.innerText = data.online;
 };
 
-const joinGroup = async () => {
+const joinGroup = () => {
   const groupNameInput = document.querySelector(".group-name").value;
   const groupName = document.querySelectorAll(".group-name")[1];
 
@@ -89,3 +89,5 @@ window.joinGroup = joinGroup;
 window.logOut = logOut;
 window.handleTextAreaKeypress = handleTextAreaKeypress;
 window.sendMessage = sendMessage;
+
+export { joinGroup };

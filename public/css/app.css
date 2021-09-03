@@ -12,7 +12,7 @@ body {
 
 /* chat-card */
 .chat-card {
-  max-height: 80vh;
+  max-height: 87vh;
   min-width: 85%;
 }
 
@@ -66,4 +66,13 @@ body {
 
 .message-input {
   resize: none;
+}
+
+@media (max-width: 360px) {
+  .group-name {
+    display: block;
+  }
+  .chat-card {
+    max-height: 89vh;
+  }
 }
