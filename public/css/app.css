@@ -1,6 +1,7 @@
 body {
   background-color: var(--bs-gray-900);
   height: 100vh;
+  user-select: none;
 }
 
 /* join-card */
@@ -41,6 +42,7 @@ body {
 .message-input::-webkit-scrollbar-thumb {
   background-color: #d1d8dd;
   box-shadow: 0 0 2px 0 gray;
+  border: 1px solid rgba(0, 0, 0, 0.308);
   border-radius: 5px;
 }
 

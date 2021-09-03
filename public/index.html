@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./img/icon/favicon.png" />
   <title>Edro Chat</title>
   <link rel="stylesheet" href="./lib/bootstrap.min.css">
-  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+  <link rel="stylesheet" href="./lib/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./lib/animate.min.css">
   <link rel="stylesheet" href="./css/app.css">
 </head>
 
@@ -24,7 +25,7 @@
         <!-- start group-name input -->
         <div class="input-group mb-4">
           <div class="input-group-text">
-            <i class="bi bi-people"></i>
+            <i><img src="./img/icon/group.svg" width="20px" alt="user-icon"></i>
           </div>
           <input type="text" class="group-name form-control" aria-label="Text input with checkbox"
             placeholder="Type group name">
@@ -34,7 +35,7 @@
         <!-- start user-name input -->
         <div class="input-group mb-4">
           <div class="input-group-text">
-            <i class="bi bi-person-badge"></i>
+            <i><img src="./img/icon/user.svg" width="20px" alt="user-icon"></i>
           </div>
           <input type="text" class="name form-control" aria-label="Text input with checkbox"
             placeholder="Type your name">
@@ -53,7 +54,7 @@
       <!-- start chat-card-header section -->
       <div class="header bg-dark p-2 d-flex rounded-3 justify-content-between">
         <h2 class="d-inline fs-3 text-light w-100"> <span class="group-name">Group name</span>: online users <span
-            class="online-users ml-3">5</span></h2>
+            class="online-users ml-3"></span></h2>
         <button type="button" class="btn btn-danger" onclick="logOut()">Logout</button>
       </div>
       <!-- end chat-card-header section -->
@@ -62,20 +63,6 @@
       <div class="content p-1">
         <!-- start message-box section -->
         <div class="messages-box d-flex flex-column p-2 rounded-3 mt-2">
-          <p class="message message-left p-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam nisi quia voluptatibus non, neque esse
-            quod vel expedita, rem minima eum dicta corrupti, nihil veniam! Repellat earum neque tempore.
-          </p>
-
-          <p class="message message-right p-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam nisi quia voluptatibus non, neque esse
-            quod vel expedita, rem minima eum dicta corrupti, nihil veniam! Repellat earum neque tempore.
-          </p>
-
-          <p class="message message-left p-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam nisi quia voluptatibus non, neque esse
-            quod vel expedita, rem minima eum dicta corrupti, nihil veniam! Repellat earum neque tempore.
-          </p>
 
         </div>
         <!-- start message-box section -->
@@ -97,8 +84,9 @@
     <!-- end chat-card section -->
   </div>
 
-  <script src="./node_modules/howler/dist/howler.min.js"></script>
-  <script src="./js/index.js"></script>
+  <script src="./lib/howler.min.js"></script>
+  <script src="https://js.pusher.com/7.0.3/pusher.min.js"></script>
+  <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>
