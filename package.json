@@ -2,7 +2,7 @@
   "name": "edro-chat",
   "version": "1.0.0",
   "description": "realtime chat app",
-  "main": "index.html",
+  "main": "server.js",
   "directories": {
     "lib": "lib"
   },
@@ -20,13 +20,10 @@
   },
   "homepage": "https://github.com/EdroVolt/Edro-Chat#readme",
   "dependencies": {
-    "animate.css": "^4.1.1",
     "body-parser": "^1.19.0",
-    "bootstrap-icons": "^1.5.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
-    "howler": "^2.2.3",
     "pusher": "^5.0.0"
   }
 }
