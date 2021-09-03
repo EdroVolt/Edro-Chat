@@ -24,6 +24,7 @@ const updateOnlineUsers = () => {
 const joinGroup = () => {
   const groupNameInput = document.querySelector(".group-name").value;
   const groupName = document.querySelectorAll(".group-name")[1];
+  data.username = document.querySelector(".name").value;
 
   data.groupName = groupNameInput;
   groupName.innerText = groupNameInput;
@@ -39,17 +40,24 @@ const logOut = () => {
   console.log("logout!");
 };
 
-const creatMessage = (text) => {
-  const message = document.createElement("p");
-  message.classList.add("message", `message-${data.side}`, "p-2");
-  message.innerText = text;
+const creatMessage = (text, username) => {
+  const messageCard = document.createElement("div");
+  const messageHeader = document.createElement("h5");
+  const messageBody = document.createElement("p");
 
-  return message;
+  messageHeader.innerText = username;
+  messageBody.innerText = text;
+
+  messageCard.classList.add("message", `message-${data.side}`, "p-2");
+  messageCard.appendChild(messageHeader);
+  messageCard.appendChild(messageBody);
+
+  return messageCard;
 };
 
-const appendMessage = (messageText) => {
+const appendMessage = (messageText, username) => {
   const messagesBox = document.querySelector(".messages-box");
-  const message = creatMessage(messageText);
+  const message = creatMessage(messageText, username);
 
   messagesBox.appendChild(message);
 
@@ -65,7 +73,7 @@ const sendMessage = () => {
   if (!textArea.value) return;
 
   const message = {
-    username: document.querySelector(".name").value,
+    username: data.username,
     message: textArea.value,
     groupName: data.groupName,
   };

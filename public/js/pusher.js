@@ -25,7 +25,7 @@ const listen = (appendMessage, data) => {
   channel.bind("message_sent", ({ username, message }) => {
     data.side =
       username === document.querySelector(".name").value ? "right" : "left";
-    appendMessage(message);
+    appendMessage(message, username);
   });
 };
 
